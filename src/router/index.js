@@ -1,6 +1,9 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import Posts from "../components/Posts.vue";
+import Register from "../components/Register.vue";
+
 
 Vue.use(VueRouter);
 
@@ -45,6 +48,16 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Login.vue")
+  },
+  {
+    path: '/posts',
+    name: 'Posts',
+    component: Posts
+  },
+  {
+    path: '/register',
+    name: 'register',
+    component: Register
   }
 ];
 

@@ -5,7 +5,9 @@
       <router-link to="/about">About</router-link> | 
       <router-link to="/product">Product</router-link> |
       <router-link to="/profile">Profile</router-link> |
-      <router-link to="/login">Login</router-link>
+      <router-link to="/login">Login</router-link> |
+      <router-link to="/register">Register</router-link> |
+      <router-link to="/posts">Post</router-link>
 
       <router-link v-if="authenticated" to="/login" v-on:click.native="logout()" replace>Logout</router-link>
     
@@ -23,7 +25,7 @@
                 authenticated: false,
                 mockAccount: {
                     username: "Michele",
-                    password: "1234"
+                    password: "12345"
                 }
             }
         },
