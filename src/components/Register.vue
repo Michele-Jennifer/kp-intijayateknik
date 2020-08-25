@@ -35,9 +35,17 @@ export default {
         email: this.email,
         password: this.password
       })
+      // this.register = response.data
       console.log(response.data)
     }
+      // register() {
+      //   console.log('Button wa clicked!', this.email, this.password)
+      // }
   }
+  // ,
+  // mounted () {
+  //   this.register()
+  // }
 
 }
 </script>
