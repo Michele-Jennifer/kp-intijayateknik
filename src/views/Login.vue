@@ -1,9 +1,11 @@
 <template>
     <div id="login">
-        <h1>Login</h1>
+        <img class="logo-ijt" alt="Vue logo" src="../assets/logo.png" />
+        
         <form>
   <div class="form-group">
-    <label for="Username">Username</label>
+    <h1>Login</h1>
+    <label for="Username mt-3">Username</label>
     <input type="username" class="form-control" id="username">
     <small class="form-text text-muted">Username merupakan nama akun anda.</small>
   </div>
@@ -12,7 +14,7 @@
     <input type="password" class="form-control" id="Password1">
   </div>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-success mt-3">Submit</button>
         </form>
 
         <!-- <input type="text" name="username" v-model="input.username" placeholder="Username" />
@@ -53,9 +55,9 @@
     #login {
         width: 500px;
         border: 1px solid #CCCCCC;
-        background-color: #FFFFFF;
+        background-color: #f8e2e2;
         margin: auto;
-        margin-top: 200px;
-        padding: 20px;
+        margin-top: 70px;
+        padding: 30px;
     }
 </style>
