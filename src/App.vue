@@ -1,17 +1,65 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> | 
-      <router-link to="/product">Product</router-link> |
-      <router-link to="/profile">Profile</router-link> |
-      <router-link to="/login">Login</router-link> |
-      <router-link to="/register">Register</router-link> |
-      <router-link to="/posts">Post</router-link>
+  
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand h1" href="#">
+    <img src="../src/assets/logo.png" width="30" height="30" class="d-inline-block align-top" loading="lazy">
+    Inti Jaya Teknik</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-      <router-link v-if="authenticated" to="/login" v-on:click.native="logout()" replace>Logout</router-link>
-    
-    </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link ml-4 mt-2" href="#">
+          <router-link to="/"> Home </router-link>
+           <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mt-2" href="#">
+          <router-link to="/about">About</router-link>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mt-2" href="#">
+          <router-link to="/product">Produk</router-link>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <button type="button" class="btn btn-success">
+          <router-link to="/login"> 
+            <svg width="18" height="18" viewBox="0 0 16 16" class="bi bi-person-fill text-white mb-1" fill="currentColor">
+              <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            </svg>
+            Login 
+          </router-link>
+          </button>
+        </a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+        <div id="nav">
+      
+          <router-link to="/">Home</router-link> |
+          <router-link to="/about">About</router-link> | 
+          <router-link to="/product">Product</router-link> |
+          <router-link to="/profile">Profile</router-link> |
+          <router-link to="/login">Login</router-link> |
+          <router-link to="/register">Register</router-link> |
+          <router-link to="/posts">Post</router-link>
+
+          <router-link v-if="authenticated" to="/login" v-on:click.native="logout()" replace>Logout</router-link>
+
+        </div>
+
     <router-view @authenticated="setAuthenticated" />
   </div>
   
@@ -52,6 +100,15 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+#app a {
+  font-weight: bold;
+  color: #f2f6fa;
+}
+
+#app a.router-link-exact-active {
+  color: #42b983;
 }
 
 #nav {
