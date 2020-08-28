@@ -1,8 +1,8 @@
 <template>
   
   <div class="home">
-    <img class="logo-ijt" alt="Vue logo" src="../assets/logo.png" /> 
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
+    <img class="img-fluid" alt="Vue logo" src="../assets/banner1.png" /> 
+    
     <CobaCoba />
   </div>
 </template>
@@ -23,9 +23,8 @@ export default {
 
 <style>
 .logo-ijt {
-  height: 200px;
-  width: 200px;
-  margin-bottom: 50px;
+  
+  margin: auto;
 }
 
 </style>

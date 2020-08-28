@@ -1,20 +1,27 @@
 <template>
     <div id="login">
-        <img class="logo-ijt" alt="Vue logo" src="../assets/logo.png" />
+        <img class="logo-ijt" width="40" height="40" alt="Vue logo" src="../assets/logo.png" />
         
         <form>
   <div class="form-group">
     <h1>Login</h1>
-    <label for="Username mt-3">Username</label>
-    <input type="username" class="form-control" id="username">
+    <input type="username" class="form-control" v-model="input.username" placeholder="Username">
     <small class="form-text text-muted">Username merupakan nama akun anda.</small>
   </div>
   <div class="form-group">
-    <label for="Password">Password</label>
-    <input type="password" class="form-control" id="Password1">
+    <input type="password" class="form-control" v-model="input.password" placeholder="Password">
   </div>
-
-  <button type="submit" class="btn btn-success mt-3">Submit</button>
+  <button type="submit" class="btn btn-success mt-3" v-on:click="login()"> 
+      Login 
+    </button>
+    <div class="form-group mt-4">
+        <label> Atau </label>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-success mt-3"> 
+           <router-link to="/register"> Daftar Baru </router-link>
+        </button>
+    </div>
         </form>
 
         <!-- <input type="text" name="username" v-model="input.username" placeholder="Username" />
@@ -36,15 +43,16 @@
         },
         methods: {
             login() {
+                
                 if(this.input.username != "" && this.input.password != "") {
                     if(this.input.username == this.$parent.mockAccount.username && this.input.password == this.$parent.mockAccount.password) {
                         this.$emit("authenticated", true);
                         this.$router.replace({ name: "profile" });
                     } else {
-                        alert("The username and / or password is incorrect");
+                        alert("Username/Password anda salah");
                     }
                 } else {
-                    alert("A username and password must be present");
+                    alert("Username/Password wajib diisi.");
                 }
             }
         }
@@ -55,7 +63,7 @@
     #login {
         width: 500px;
         border: 1px solid #CCCCCC;
-        background-color: #f8e2e2;
+        background-color: #f8e2e2 transparent;
         margin: auto;
         margin-top: 70px;
         padding: 30px;

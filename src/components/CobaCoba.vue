@@ -1,9 +1,8 @@
 <template>
     <div class="logos-wrapper">
-        <h1> Welcome to our Store </h1>
-        <div class="item-logos">
-            <img class="logo" src="../assets/logo1.png" alt="logo1">
-        </div>
+        <h2> Welcome to our Store </h2>
+
+
         <div class="item-logos">
             <img class="logo" src="../assets/logo2.png" alt="logo2">
         </div>
@@ -27,15 +26,13 @@ export default {
 
 <style scoped>
 .logos-wrapper {
-    width: 70%;
+    width: 1120px;
    overflow: visible; 
    margin: auto;
-   background: rgb(255, 212, 196);
+   background: rgba(223, 218, 216, 0.432);
 }
 
 .item-logos {
-    width: 200px;
-    height: 200px;
     background: lightgoldenrodyellow;
     float: left;
     margin-right: 30px;
