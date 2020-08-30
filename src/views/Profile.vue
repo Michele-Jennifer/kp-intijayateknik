@@ -8,7 +8,7 @@
                     <div class="media-body">
                         <h5 class="mt-0">{{ username }}</h5>
                          <p>
-                        Email : northveil@ymail.com <br>
+                        username : {{username}} <br>
                         No.Hp : {{noHp}} <br>
                         Alamat : Jln. kemuning no.2B
                         </p>

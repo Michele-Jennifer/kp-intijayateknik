@@ -4,7 +4,6 @@ import Home from "../views/Home.vue";
 import Posts from "../components/Posts.vue";
 import Register from "../components/Register.vue";
 
-
 Vue.use(VueRouter);
 
 const routes = [

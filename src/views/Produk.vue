@@ -1,6 +1,6 @@
 <template>
   <div class="product">
-    <div class="container">
+    <!-- <div class="container">
         <div class="row header mb-5 p-3">
             <div class="col-lg-12">
                 <h2> Daftar Produk </h2>
@@ -15,7 +15,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+    <Slider />
 
   </div>
 </template>
@@ -23,7 +25,8 @@
 <script>
 
 import "bootstrap/dist/css/bootstrap.css";
-import ItemProduk from "../components/ItemProduk.vue";
+// import ItemProduk from "../components/ItemProduk.vue";
+import Slider from "@/components/Slider.vue";
 
 export default {
   name: "Product",
@@ -54,7 +57,8 @@ export default {
     };
   },
   components: {
-    ItemProduk
+    // ItemProduk
+    Slider
   }
 };
 </script>

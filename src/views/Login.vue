@@ -1,6 +1,6 @@
 <template>
     <div id="login">
-        <img class="logo-ijt" width="40" height="40" alt="Vue logo" src="../assets/logo.png" />
+        <img class="logo-ijt" width="80" height="80" alt="Vue logo" src="../assets/logo.png" />
         
         <form>
   <div class="form-group">
