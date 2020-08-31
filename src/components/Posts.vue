@@ -1,6 +1,10 @@
 <template>
   <div class="posts">
-    <h1>Daftar Produk</h1>
+    <div class="row header mb-5 p-3">
+      <div class="col-lg-12">
+        <h2> Halaman Admin</h2>
+      </div>
+    </div>
     <div class ="container">
         <button class="btn btn-success mt-5 mb-5"
             @click="addNewProductForm">
@@ -84,3 +88,13 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.header {
+  background-color: limegreen;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: whitesmoke;
+  
+}
+
+</style>

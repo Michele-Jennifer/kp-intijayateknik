@@ -1,17 +1,11 @@
 <template>
   <div class="product">
         <!-- <div class="container"> -->
-        <div>
-            <Slider />
-        </div>
-
         <div class="row header mb-5 p-3">
             <div class="col-lg-12">
                 <h2> Daftar Produk </h2>
             </div>
         </div>
-
-
 
         <!-- <div class="row content">
             <div class="col-lg-12">
@@ -23,15 +17,12 @@
             </div>
         </div>
     </div> -->
-
-
   </div>
 </template>
 
 <script>
 
 import "bootstrap/dist/css/bootstrap.css";
-import Slider from "@/components/Slider.vue";
 
 export default {
   name: "Product",
@@ -63,14 +54,15 @@ export default {
   },
   components: {
     // ItemProduk,
-    Slider
   }
 };
 </script>
 
 <style>
 .header {
-  background: lightgreen;
+  background-color: limegreen;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: whitesmoke;
 }
 
 .item-completed {

@@ -94,11 +94,11 @@ img {
 }
 
 .next {
-  right: 400px;
+  right: 200px;
 }
 
 .prev {
-  left: 400px;
+  left: 200px;
 }
 
 .prev:hover, .next:hover {

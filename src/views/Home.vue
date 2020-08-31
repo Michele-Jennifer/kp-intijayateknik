@@ -2,12 +2,17 @@
   
   <div class="home">
     <!-- <img class="img-fluid" alt="Vue logo" src="../assets/banner1.png" />  -->
+    
+    <div class="row header mb-5 p-3">
+      <div class="col-lg-12">
+        <h2> Welcome To Our Store</h2>
+      </div>
+    </div>
+    
     <div class="container">
       <Slider />
     </div>
-    <div class="banner">
-      <h2> Welcome to our Store </h2>
-    </div>
+    
   </div>
 </template>
 
@@ -21,7 +26,6 @@ import Slider from "@/components/Slider.vue";
 export default {
   name: "Home",
   components: {
-    
     Slider
   }
 };
@@ -29,14 +33,20 @@ export default {
 
 <style>
 .banner{
-   
-   overflow: visible; 
+   /* overflow: visible;  */
    margin: auto;
    background: rgba(223, 218, 216, 0.432);
 }
 
 .container{
-  margin: auto;
   height: 600px;
+  position: sticky;
+  color: forestgreen;
+}
+
+.header {
+  background-color: limegreen;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: whitesmoke;
 }
 </style>

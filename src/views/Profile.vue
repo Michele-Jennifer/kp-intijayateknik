@@ -1,6 +1,11 @@
 <template>
   <div class="profile">
     <div class="container">
+        <div class="row header mb-5 p-3">
+            <div class="col-lg-12">
+                <h2> Profile </h2>
+            </div>
+        </div>
         <div class="row justify-content-center">
             <div class="col-6">
                 <div class="media text-left">
