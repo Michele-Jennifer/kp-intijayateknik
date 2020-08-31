@@ -81,9 +81,8 @@
 
 <script>
 import "bootstrap/dist/css/bootstrap.css";
-
     export default {
-        name: 'App',
+        name: "app",
         data() {
             return {
                 authenticated: false,

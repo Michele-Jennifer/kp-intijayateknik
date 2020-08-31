@@ -1,9 +1,13 @@
 <template>
   
   <div class="home">
-    <img class="img-fluid" alt="Vue logo" src="../assets/banner1.png" /> 
-    
-    <CobaCoba />
+    <!-- <img class="img-fluid" alt="Vue logo" src="../assets/banner1.png" />  -->
+    <div class="container">
+      <Slider />
+    </div>
+    <div class="banner">
+      <h2> Welcome to our Store </h2>
+    </div>
   </div>
 </template>
 
@@ -11,20 +15,28 @@
 // @ is an alias to /src
 
 // import HelloWorld from "@/components/HelloWorld.vue";
-import CobaCoba from "@/components/CobaCoba.vue";
+
+import Slider from "@/components/Slider.vue";
 
 export default {
   name: "Home",
   components: {
-    CobaCoba
+    
+    Slider
   }
 };
 </script>
 
 <style>
-.logo-ijt {
-  
-  margin: auto;
+.banner{
+   
+   overflow: visible; 
+   margin: auto;
+   background: rgba(223, 218, 216, 0.432);
 }
 
+.container{
+  margin: auto;
+  height: 600px;
+}
 </style>

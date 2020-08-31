@@ -22,6 +22,7 @@ export default {
         "https://cdn.pixabay.com/photo/2016/02/17/23/03/usa-1206240_1280.jpg",
         "https://cdn.pixabay.com/photo/2015/05/15/14/27/eiffel-tower-768501_1280.jpg",
         "https://cdn.pixabay.com/photo/2016/12/04/19/30/berlin-cathedral-1882397_1280.jpg"
+        // "../assets/banner1.png"
       ],
       timer: null,
       currentIndex: 0
@@ -38,7 +39,7 @@ export default {
     },
 
     next: function() {
-      this.currentIndex += 1;
+      this.currentIndex += -1;
     },
     prev: function() {
       this.currentIndex -= 1;
@@ -58,7 +59,7 @@ export default {
 .fade-leave-active {
   transition: all 0.9s ease;
   overflow: hidden;
-  visibility: visible;
+  visibility: hidden;
   position: absolute;
   width:100%;
   opacity: 1;
@@ -72,17 +73,18 @@ export default {
 }
 
 img {
-  height:600px;
-  width:100%
+  /* height:600px; */
+ height: 500px;
+ 
 }
 
 .prev, .next {
   cursor: pointer;
-  position: absolute;
+  position:absolute;
   top: 40%;
   width: auto;
-  padding: 16px;
-  color: white;
+  padding: 30px;
+  color: green;
   font-weight: bold;
   font-size: 18px;
   transition: 0.7s ease;
@@ -92,11 +94,11 @@ img {
 }
 
 .next {
-  right: 0;
+  right: 400px;
 }
 
 .prev {
-  left: 0;
+  left: 400px;
 }
 
 .prev:hover, .next:hover {

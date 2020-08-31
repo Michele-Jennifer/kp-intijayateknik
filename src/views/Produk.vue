@@ -1,12 +1,19 @@
 <template>
   <div class="product">
-    <!-- <div class="container">
+        <!-- <div class="container"> -->
+        <div>
+            <Slider />
+        </div>
+
         <div class="row header mb-5 p-3">
             <div class="col-lg-12">
                 <h2> Daftar Produk </h2>
             </div>
         </div>
-        <div class="row content">
+
+
+
+        <!-- <div class="row content">
             <div class="col-lg-12">
                 <div class="jenis-produk">
                     <div v-for="daftar in produk" v-bind:key="daftar.id" class="daftar-produk text-left">
@@ -17,7 +24,6 @@
         </div>
     </div> -->
 
-    <Slider />
 
   </div>
 </template>
@@ -25,7 +31,6 @@
 <script>
 
 import "bootstrap/dist/css/bootstrap.css";
-// import ItemProduk from "../components/ItemProduk.vue";
 import Slider from "@/components/Slider.vue";
 
 export default {
@@ -57,7 +62,7 @@ export default {
     };
   },
   components: {
-    // ItemProduk
+    // ItemProduk,
     Slider
   }
 };
@@ -66,10 +71,6 @@ export default {
 <style>
 .header {
   background: lightgreen;
-}
-
-.header h2 {
-    margin: 0;
 }
 
 .item-completed {
