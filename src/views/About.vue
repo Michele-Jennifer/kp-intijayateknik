@@ -1,12 +1,20 @@
 <template>
   <div class="about">
     
-    <ul v-for="user in users" :key="user.id">
-      <li>
-      <span>{{user.name}}</span> &#160;
-      </li>
-    </ul>
+    <div class="row header mb-2 p-2">
+      <div class="col-lg-12">
+        <h2> About </h2>
+      </div>
+    </div>
   
   </div>
 </template>
 
+<style scoped>
+  .header {
+  background-color: limegreen;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: whitesmoke;
+  }
+  
+</style>

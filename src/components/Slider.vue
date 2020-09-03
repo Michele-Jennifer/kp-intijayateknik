@@ -1,15 +1,13 @@
 <template>
   <div>
-    <h1>Heading</h1>
     <transition-group name="fade" tag="div">
       <div v-for="i in [currentIndex]" :key="i">
-        <img :src="currentImg" />
+        <img :src="require('../assets/'+currentImg)" />
       </div>
     </transition-group>
     <a class="prev" @click="prev" href="#">&#10094; Previous</a>
     <a class="next" @click="next" href="#">&#10095; Next</a>
   </div>
-
 </template>
 
 <script>
@@ -18,11 +16,9 @@ export default {
   data() {
     return {
       images: [
-        "https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg",
-        "https://cdn.pixabay.com/photo/2016/02/17/23/03/usa-1206240_1280.jpg",
-        "https://cdn.pixabay.com/photo/2015/05/15/14/27/eiffel-tower-768501_1280.jpg",
-        "https://cdn.pixabay.com/photo/2016/12/04/19/30/berlin-cathedral-1882397_1280.jpg"
-        // "../assets/banner1.png"
+        "banner2.png",
+        "banner1.png",
+        "banner3.png"
       ],
       timer: null,
       currentIndex: 0
@@ -94,11 +90,11 @@ img {
 }
 
 .next {
-  right: 200px;
+  right: 150px;
 }
 
 .prev {
-  left: 200px;
+  left: 150px;
 }
 
 .prev:hover, .next:hover {
