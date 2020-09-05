@@ -1,0 +1,28 @@
+[{ 
+    "id" : 1,
+    "nama" : "Colokan Mikotek",
+    "harga" : 6000,
+    "src" : "mikotek.jpg",
+    "stok" : 3
+},
+{ 
+    "id" : 2,
+    "nama" : "Lampu Semny 5W",
+    "harga" : 25000,
+    "src" : "Semny5W.jpeg",
+    "stok" : 20
+},
+{ 
+    "id" : 3,
+    "nama" : "Colokan Cahaya",
+    "harga" : 10000,
+    "src" : "steker1.jpeg",
+    "stok" : 5
+},
+{ 
+    "id" : 4,
+    "nama" : "Colokan Uticon",
+    "harga" : 8000,
+    "src" : "stekerUticon.jpg",
+    "stok" : 11
+}]

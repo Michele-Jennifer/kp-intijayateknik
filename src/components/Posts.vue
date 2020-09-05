@@ -39,18 +39,18 @@
         </div>
     </div>
 
-    <div v-for="post in posts" v-bind:key="post.id">
+    <!-- <div v-for="post in posts" v-bind:key="post.id">
       <p>
         <span><b>{{ post.title }}</b></span><br />
         <span>{{ post.description }}</span>
       </p>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
 
-import PostsService from '../services/PostService'
+// import PostsService from '../services/PostService'
 export default {
   name: 'posts',
   data () {
@@ -65,14 +65,14 @@ export default {
       ]
     }
   },
-  mounted () {
-    this.getPosts()
-  },
+  // mounted () {
+  //   this.getPosts()
+  // },
   methods: {
-    async getPosts () {
-      const response = await PostsService.fetchPosts()
-      this.posts = response.data
-    },
+    // async getPosts () {
+    //   const response = await PostsService.fetchPosts()
+    //   this.posts = response.data
+    // },
 
     addNewProductForm (){
       this.daftarproduk.push({

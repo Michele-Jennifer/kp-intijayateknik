@@ -52,14 +52,14 @@
             </a>
           
       </li>
-      <li class="nav-item">
+      <li v-if="authenticated" class="nav-item">
         <a class="nav-link mt-2">
           <router-link to="/profile">Profile</router-link>
         </a>
       </li>
-      <li class="nav-item">
+      <li v-if="authenticated" class="nav-item">
         <a class="nav-link mt-2">
-          <router-link to="/posts">Post</router-link>
+          <router-link to="/posts"> Admin </router-link>
         </a>
       </li>
 

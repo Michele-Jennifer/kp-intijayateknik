@@ -18,7 +18,7 @@ export default {
       images: [
         "banner2.png",
         "banner1.png",
-        "banner3.png"
+        "banner4.jpg"
       ],
       timer: null,
       currentIndex: 0
